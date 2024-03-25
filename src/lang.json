@@ -1,0 +1,32 @@
+{   "es" : {
+        "principal" : {
+            "home" : "Home",
+            "proyectos" : "Proyectos",
+            "cv" : "CV",
+            "hire" : "Contactame"
+        },
+        "presentacion" : {
+            "saludoInicio" : "Hola, me llamo ",
+            "saludoMedio" : "Soy un desarrollador FullStack.",
+            "saludoFinal" :  "Soy un apasionado de la tecnologia y a la programacion.",
+            "portfolio" : "Portafolio"
+        }
+    },
+    "en" : {
+        "principal" : {
+            "home" : "Home",
+            "proyectos" : "Proyects",
+            "cv" : "CV",
+            "hire" : "Contact Me"
+        }
+    },
+    "datos" : {
+        "nombre" : "Cristian",
+        "apellido" : "Campos",
+        "numero" : "+ 54 11 44457907",
+        "dir" : "Casacuberta",
+        "dirNum" : "5472",
+        "correo" : "cristiancampos1508@gmail.com",
+        "linkedin" : "https://www.linkedin.com/in/cristian-campos1508/"
+    }
+}

@@ -1,0 +1,199 @@
+body {
+    background-color: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
+    margin: 0;
+
+}
+
+.barra {
+    display: flex;
+    top: 0;
+    height: 7vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.barra nav {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: "opciones opciones opciones opciones idioma";
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    & div a {
+        font-size: 1vw;
+        text-decoration: unset;
+    }
+}
+
+.barra-opciones {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: opciones;
+    align-items: center;
+}
+
+.barra-idioma {
+    display: flex;
+    grid-area: idioma;
+    flex-direction: row-reverse;
+    margin-right: 15%;
+}
+
+.barra nav a:hover {
+    font-size: 1.1vw;
+}
+
+.main {
+    padding: 7vh 10%;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    font-size: 2vw;
+    font-family: "Quintessential";
+    color: beige;
+    background-color: rgba(34, 34, 34, 0.8);
+
+    & section {
+        display: flex;
+        align-items: center;
+    }
+
+
+    & div {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+            display: flex;
+            text-align: right;
+        }
+        & strong {
+            font-size: 3vw;
+        }
+    }
+}
+
+.portafolio {
+    background-color: blanchedalmond;
+}
+
+.seccion-imagen {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+}
+
+.titulo {
+    width: 100%;
+    margin-top: -80px;
+    margin-bottom: -90px;
+    color: white;
+    background-color: rgb(111, 128, 144);
+    font-family: System-ui;
+    text-align: center;
+    font-size: 40px;
+    /*  border: solid 5px lightsteelblue;
+    border-radius: 100%;  */
+    padding: 85px;
+    padding-bottom: 200px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 15px rgb(111, 128, 144);
+}
+
+.img-perfil {
+    display: flex;
+    width: 300px;
+    border-radius: 50%;
+    border: solid 8px rgb(213, 220, 228);
+}
+
+.cuadroDatos {
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.cuadroDatos h5 {
+    margin-top: -22px;
+}
+
+.cuadroDatos h4 {
+    margin-top: 5px;
+}
+
+.titulo-datos-personales {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: black;
+}
+
+.barra-lateral {
+    background: rgb(241, 241, 241);
+}
+
+.cuerpo {
+    background: rgb(255, 255, 255);
+
+}
+
+
+
+.presentacion {
+    box-sizing: border-box;
+    font-family: Calibri;
+    font-style: italic;
+    background-color: rgb(197, 204, 210);
+    text-align: justify;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(111, 128, 144);
+}
+
+/* nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: .7;
+    gap: 50px;
+    height: 40px;
+    border-radius: 10px;
+} */
+
+/* nav a {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    transition-duration: 2s;
+} */
+
+/* nav a:hover {
+    font-size: 22px;
+} */
+
+.iconos {
+    height: 1em;
+    margin-right: 6px;
+}
+
+h5 {
+    margin-left: 30px;
+
+}
