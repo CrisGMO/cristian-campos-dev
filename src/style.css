@@ -14,22 +14,24 @@ body {
     width: 100vw;
     position: fixed;
     z-index: 1000;
-    background-color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
 }
 
 .barra nav {
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-areas: "opciones opciones opciones opciones idioma";
+    background-color: rgba(37, 37, 37, 0.8);
+    border-radius: 10px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    max-height: 7vh;
     & div a {
-        font-size: 1vw;
+        font-size: 1.5vw;
         text-decoration: unset;
+        color: white;
+    }
+    & div a:hover {
+        font-size: 1.7vw;
     }
 }
 
@@ -37,13 +39,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    grid-area: opciones;
     align-items: center;
 }
 
 .barra-idioma {
     display: flex;
-    grid-area: idioma;
     flex-direction: row-reverse;
     margin-right: 15%;
 }
@@ -53,34 +53,52 @@ body {
 }
 
 .main {
-    padding: 7vh 10%;
     width: 100%;
-    height: 94vh;
-    display: flex;
+    height: 97vh;
     font-size: 2vw;
     font-family: "Quintessential";
     color: beige;
-    background-color: rgba(34, 34, 34, 0.8);
-
-    & section {
-        display: flex;
-        align-items: center;
-    }
-
-
-    & div {
-        display: flex;
-        flex-direction: column;
-
-        & p {
-            display: flex;
-            text-align: right;
-        }
-        & strong {
-            font-size: 3vw;
-        }
-    }
+    background-image: url(portada.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+.cuadro-presentacion {
+    position: relative;
+    display: grid;
+    /* border: 5px solid; */
+    border-radius: 1vw;
+    box-shadow: 2vw 2vw 5px rgba(0, 0, 0, 0.65);
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+                        "sign name"
+                        "sign hab";
+    top: 25%;
+    left: 7%;
+    /* height: 50%; */
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#sign {
+    display: flex;
+    grid-area: sign;
+    font-size: 450%;
+    align-items: center;
+    justify-content: center;
+}
+#name {
+    grid-area: name;
+    width: 150%;
+    text-align: start;
+    font-size: 12vh;
+}
+#hab {
+    grid-area: hab;
+    font-size: 8vh;
+}
+
 
 .portafolio {
     background-color: blanchedalmond;
