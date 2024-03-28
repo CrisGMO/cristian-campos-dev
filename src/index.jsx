@@ -16,42 +16,42 @@ const trad = langActual == 'en'? lang.en : lang.es ;
 console.log(trad);
 
 
-rootBarra.render(
-    <StrictMode>
-            <nav className="barra-navegacion">
-                <div className="barra-opciones">
-                    <a className="" href="index.html">{trad.principal.home}</a>
-                    <a className="" href="projects-grid-cards.html">{trad.principal.proyectos}</a>
-                    <a className="" href="cv.html">{trad.principal.cv}</a>
-                    <a className="" href="hire-me.html">{trad.principal.hire}</a>
-                </div>
-                <div className="barra-idioma">
-                <select onChange={(e) => cambiarIdioma(e.target.value)}>
-                    <option value="es">es</option>
-                    <option value="en">en</option>
-                </select>
-                </div>
-            </nav>
-    </StrictMode>
-)
+// rootBarra.render(
+//     <StrictMode>
+//             <nav className="barra-navegacion">
+//                 <div className="barra-opciones">
+//                     <a className="" href="index.html">{trad.principal.home}</a>
+//                     <a className="" href="projects-grid-cards.html">{trad.principal.proyectos}</a>
+//                     <a className="" href="cv.html">{trad.principal.cv}</a>
+//                     <a className="" href="hire-me.html">{trad.principal.hire}</a>
+//                 </div>
+//                 <div className="barra-idioma">
+//                 <select onChange={(e) => cambiarIdioma(e.target.value)}>
+//                     <option value="es">es</option>
+//                     <option value="en">en</option>
+//                 </select>
+//                 </div>
+//             </nav>
+//     </StrictMode>
+// )
 
-rootPresentacion.render(
-    <StrictMode>
-        <section className="carta-presentacion">
-            <div className="">
-                <p>{trad.presentacion.saludoInicio}</p>
-                <strong>{ lang.datos.nombre} {lang.datos.apellido}. </strong>
-                <p>{trad.presentacion.saludoMedio}</p>
-                <p>{trad.presentacion.saludoFinal}</p>
-            </div>
-        </section>
-        <section className="">
-            <div class="seccion-imagen">
-                <img class="img-perfil" src="imgCC.jpg"></img>
-            </div>
-        </section>
-    </StrictMode>
-)
+// rootPresentacion.render(
+//     <StrictMode>
+//         <section className="carta-presentacion">
+//             <div className="">
+//                 <p>{trad.presentacion.saludoInicio}</p>
+//                 <strong>{ lang.datos.nombre} {lang.datos.apellido}. </strong>
+//                 <p>{trad.presentacion.saludoMedio}</p>
+//                 <p>{trad.presentacion.saludoFinal}</p>
+//             </div>
+//         </section>
+//         <section className="">
+//             <div class="seccion-imagen">
+//                 <img class="img-perfil" src="./src/imgCC.jpg"></img>
+//             </div>
+//         </section>
+//     </StrictMode>
+// )
 
 rootPortafolio.render(
     <StrictMode>

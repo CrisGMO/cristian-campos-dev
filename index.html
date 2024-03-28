@@ -1,170 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Cristian Campos</title>
 
     <!-- incluyendo bootstrap -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="src/index.jsx"></script>
 
-    
     <!-- <script src="src/langES.json"></script> -->
-    
-
   </head>
   <body id="root" style="display: block;">
     <div class="barra" id="barra-navegacion">
-
+      <nav class="barra-navegacion">
+        <div class="barra-opciones">
+          <a class href="index.html">Home</a>
+          <a class href="projects-grid-cards.html">Proyectos</a>
+          <a class href="cv.html">CV</a>
+          <a class href="hire-me.html">Contactame</a>
+        </div>
+      </nav>
     </div>
 
-    <main id='presentacion' class="main">
-        
+    <main id="presentacion" class="main">
+      <div class="cuadro-presentacion">
+        <h1 id="sign-in">&lt;Dev&gt;</h1>
+        <h1 id="name">Cristian Campos</h1>
+        <h2 id="hab">Desarrollador FullStack</h2>
+        <h1 id="sign-out">&lt;/Dev&gt;</h1>
+      </div>
     </main>
 
-    <div id="portafolio" class="portafolio">
+    <div id="portafolio" class="portafolio"></div>
 
-    </div>
-
-
-
-    
-    
-
-
-
-
-
-      <section class="">
-          <!-- <div class="seccion-imagen">
+    <section class>
+      <!-- <div class="seccion-imagen">
               <h1 class="titulo">Cristian Campos</h1>
               <img class="img-perfil" src="src/imgCC.jpg">
           </div> -->
-          <div class="cuadroDatos">
-              <h3 class="titulo-datos-personales">Datos Personales</h3>
+      <div class="cuadroDatos">
+        <h3 class="titulo-datos-personales">Datos Personales</h3>
 
-              <h4><img class="iconos" src="src/iconNombre.png">Nombre</h4>
-                  <h5>Cristian Marcelo Campos</h5>
-              <h4><img class="iconos" src="src/iconCasa.png">Direccion</h4>
-                  <h5>Casacuberta 5472</h5>
-                  <h5>Moreno, Buenos Aires</h5>
-              <h4><img class="iconos" src="src/iconCalendario.png">Nacimiento</h4>
-                  <h5>15 de Agosto - 1995</h5>
+        <h4><img class="iconos" src="src/iconNombre.png" />Nombre</h4>
+        <h5>Cristian Marcelo Campos</h5>
+        <h4><img class="iconos" src="src/iconCasa.png" />Direccion</h4>
+        <h5>Casacuberta 5472</h5>
+        <h5>Moreno, Buenos Aires</h5>
+        <h4><img class="iconos" src="src/iconCalendario.png" />Nacimiento</h4>
+        <h5>15 de Agosto - 1995</h5>
 
-              <h3 class="titulo-datos-personales">Contacto</h3>
-              
-                  <h4><img class="iconos" src="src/iconLlamada.png">Numero de Telefono</h4>
-                      <h5>+54 11 44457907</h5>
-                  <h4><img class="iconos" src="src/iconCorreo.png">Correo Electronico</h4>
-                      <h5><a href="mailto:cristiancampos1508@gmail.com" target="_blank">cristiancampos1508@gmail.com</a></h5>
-                  <h4><img class="iconos" src="src/iconLinkedin.png">Linkedin</h4>
-                      <h5><a href="https://www.linkedin.com/in/cristian-campos1508/">https://www.linkedin.com/in/cristian-campos1508/</a></h5>
-          </div>
+        <h3 class="titulo-datos-personales">Contacto</h3>
 
-        </section>
+        <h4>
+          <img class="iconos" src="src/iconLlamada.png" />Numero de Telefono
+        </h4>
+        <h5>+54 11 44457907</h5>
+        <h4>
+          <img class="iconos" src="src/iconCorreo.png" />Correo Electronico
+        </h4>
+        <h5>
+          <a href="mailto:cristiancampos1508@gmail.com" target="_blank"
+            >cristiancampos1508@gmail.com</a
+          >
+        </h5>
+        <h4><img class="iconos" src="src/iconLinkedin.png" />Linkedin</h4>
+        <h5>
+          <a href="https://www.linkedin.com/in/cristian-campos1508/"
+            >https://www.linkedin.com/in/cristian-campos1508/</a
+          >
+        </h5>
+      </div>
+    </section>
 
-
-
-
-  <aside class="cuerpo">
+    <aside class="cuerpo">
       <h2 class="presentacion">
-          <span>
-              Estudiante de Sistemas apasionado por la programación y los nuevos
-              aprendizajes. Busco dar mis primeros pasos en grandes proyectos. La experiencia de
-              la vida me ha ayudado a desarrollar una mente práctica e innovadora, buscando las
-              mejores soluciones a los desafíos, por lo que me considero una persona muy resolutiva.
-              Tengo conocimientos y experiencia práctica en desarrollo web, tanto en front-end
-              como en back-end, utilizando tecnologías como JavaScrypt, HTML, CSS, Angular JS,
-              Node JS, entre otros. También en el desarrollo de aplicaciones con tecnologías como
-              JAVA, Python, GO, etc. He participado en cada etapa del ciclo de vida de desarrollo de
-              software.
-              Busco seguir creciendo profesionalmente en la industria de la programación,
-              explorando nuevas oportunidades y especializándome en áreas que me apasionan.
-          </span>
+        <span>
+          Estudiante de Sistemas apasionado por la programación y los nuevos
+          aprendizajes. Busco dar mis primeros pasos en grandes proyectos. La
+          experiencia de la vida me ha ayudado a desarrollar una mente práctica
+          e innovadora, buscando las mejores soluciones a los desafíos, por lo
+          que me considero una persona muy resolutiva. Tengo conocimientos y
+          experiencia práctica en desarrollo web, tanto en front-end como en
+          back-end, utilizando tecnologías como JavaScrypt, HTML, CSS, Angular
+          JS, Node JS, entre otros. También en el desarrollo de aplicaciones con
+          tecnologías como JAVA, Python, GO, etc. He participado en cada etapa
+          del ciclo de vida de desarrollo de software. Busco seguir creciendo
+          profesionalmente en la industria de la programación, explorando nuevas
+          oportunidades y especializándome en áreas que me apasionan.
+        </span>
       </h2>
       <nav>
-          <a href="#conocimientos">Conocimientos</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#estudios">Formacion y Estudios</a>
-          <a href="#experiencia">Experiencia</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#estudios">Formacion y Estudios</a>
+        <a href="#experiencia">Experiencia</a>
       </nav>
-      <br>
+      <br />
       <h2 id="conocimientos">Conocimientos</h2>
       <h3>
-          <span>
-              JAVA. HTML5. JS. Go. Pyhton. Angular. Node JS. CSS. Bootstrap. Microsoft Office.
-              React JS. JQuerry.MySQL. UML. Agile. Git. Soporte Técnico.
-          </span>
+        <span>
+          JAVA. HTML5. JS. Go. Pyhton. Angular. Node JS. CSS. Bootstrap.
+          Microsoft Office. React JS. JQuerry.MySQL. UML. Agile. Git. Soporte
+          Técnico.
+        </span>
       </h3>
       <h2 id="habilidades">Habilidades</h2>
-  <h3>
-      <span>
-          Desarrollo Web. Desarrollo de Software. Arquitectura de Software. Análisis de Requerimientos.
-          Trabajo en Equipo. Liderazgo. Creatividad. Autodidacta. Resolución de Problemas. Diseño.
-      </span>
-  </h3>
-  <br>
-  <h2 id="estudios">Formacion y Estudios</h2>
-  <h3>Estudios Universitarios
-      <h4>(2016 - presente) Licenciatura en Sistemas. Universidad Nacional de General Sarmiento</h4>
-      <h5>Materias Aprobadas : 18</h5> <h5>Materias Restantes: 19</h5>
-      <br>
-      <h4>(2019 - presente) Tecnicatura Superior en Informatica. Universidad Nacional de General Sarmiento</h4>
-      <h5>Materias Aprobadas : 19</h5> <h5>Materias Restantes: 2</h5>
-      <br>
-  </h3>
-  <h3>Cursos Complementarios
-      <h4>(2006) Investigador Avanzado. ECTA</h4>
-      <h4>(2007) Operador PC Basico. ECTA</h4>
-  </h3>
-  <br>
-  <h2 id="experiencia">Experiencia Laboral y de Formacion</h2>
-  <h3>(2016 - 2016) Vendedor - Local de Ropa Brescia.</h3>
-      <h4>Esta etapa no ha sido transcendental en mi formacion como desarrollador, sin embargo,
-          he aprendido en este trabajo a comunicarme con las personas, en el rol de vendedor.
-      </h4>
-  <h3>(2017 - 2017) Seguridad - Dash/Grid</h3>
+      <h3>
+        <span>
+          Desarrollo Web. Desarrollo de Software. Arquitectura de Software.
+          Análisis de Requerimientos. Trabajo en Equipo. Liderazgo. Creatividad.
+          Autodidacta. Resolución de Problemas. Diseño.
+        </span>
+      </h3>
+      <br />
+      <h2 id="estudios">Formacion y Estudios</h2>
+      <h3>
+        Estudios Universitarios
+        <h4>
+          (2016 - presente) Licenciatura en Sistemas. Universidad Nacional de
+          General Sarmiento
+        </h4>
+        <h5>Materias Aprobadas : 18</h5>
+        <h5>Materias Restantes: 19</h5>
+        <br />
+        <h4>
+          (2019 - presente) Tecnicatura Superior en Informatica. Universidad
+          Nacional de General Sarmiento
+        </h4>
+        <h5>Materias Aprobadas : 19</h5>
+        <h5>Materias Restantes: 2</h5>
+        <br />
+      </h3>
+      <h3>
+        Cursos Complementarios
+        <h4>(2006) Investigador Avanzado. ECTA</h4>
+        <h4>(2007) Operador PC Basico. ECTA</h4>
+      </h3>
+      <br />
+      <h2 id="experiencia">Experiencia Laboral y de Formacion</h2>
+      <h3>(2016 - 2016) Vendedor - Local de Ropa Brescia.</h3>
       <h4>
-          Este trabajo consistia en cuidar a las personas, a los empleados y el stock del local.
-          Tambien recurrentemente las personas pedian ayudada o orientacion, por lo que en este
-          trabajo tambien tuve que aprender a tratar con distintas personas, a comunicarme y a 
-          manejar situaciones.
+        Esta etapa no ha sido transcendental en mi formacion como desarrollador,
+        sin embargo, he aprendido en este trabajo a comunicarme con las
+        personas, en el rol de vendedor.
       </h4>
-  <h3>(2017 - 2021) Dibujante CAD - Autonomo</h3>
+      <h3>(2017 - 2017) Seguridad - Dash/Grid</h3>
       <h4>
-          Gracias a mi habilidad en la informatica y a mi paso por la carrera de Ingenieria,
-          pude aprender a realizar planos municipales con programas de dibujo asistido por
-          computadora. Este trabajo requeria una buena comunicacion con clientes y en ocaciones
-          con compañeros de trabajo. Cada proyecto requeria identificar requisitos de los mismos,
-          a documentar los mismos, a administrar los tiempos y los recursos del equipo.
+        Este trabajo consistia en cuidar a las personas, a los empleados y el
+        stock del local. Tambien recurrentemente las personas pedian ayudada o
+        orientacion, por lo que en este trabajo tambien tuve que aprender a
+        tratar con distintas personas, a comunicarme y a manejar situaciones.
       </h4>
-  <h3>(2017 - presente) Tecnico de PC / Celulares / Electronica - Autonomo</h3>
+      <h3>(2017 - 2021) Dibujante CAD - Autonomo</h3>
       <h4>
-          El conocimiento tanto en software como en hardware me permitio adentrarme en el mundo
-          del mantenimiento y actualizacion de computadoras, tanto de escritorio como portatiles,
-          de celulares y de otros aparatos electronicos. Esto requiere que este en continuo aprendizaje,
-          muchas veces leyendo documentacion. Tambien me permite explorar y conocer el mundo de
-          los componentes de la "maquina de Von Neumann". He trabajado manteniendo los componentes,
-          cambiandolos cuando es necesario o haciendoles reballing.
+        Gracias a mi habilidad en la informatica y a mi paso por la carrera de
+        Ingenieria, pude aprender a realizar planos municipales con programas de
+        dibujo asistido por computadora. Este trabajo requeria una buena
+        comunicacion con clientes y en ocaciones con compañeros de trabajo. Cada
+        proyecto requeria identificar requisitos de los mismos, a documentar los
+        mismos, a administrar los tiempos y los recursos del equipo.
       </h4>
-  <h3>(2023 - presente) Tecnico Operador DMX - Autonomo</h3>
+      <h3>
+        (2017 - presente) Tecnico de PC / Celulares / Electronica - Autonomo
+      </h3>
       <h4>
-          Ahondando en el mundo de la computacion y la electronica, me adentre en el mundo de DMX.
-          Este me permitio utilizar los conocimientos que habia aprendido, tanto en informatica como
-          en reparecion. En este trabajo debo manejar y mantener los equipo DMX. Tambien, requiere
-          un buen manejo del estres. Entre otras tareas, tambien trato con clientes.
+        El conocimiento tanto en software como en hardware me permitio
+        adentrarme en el mundo del mantenimiento y actualizacion de
+        computadoras, tanto de escritorio como portatiles, de celulares y de
+        otros aparatos electronicos. Esto requiere que este en continuo
+        aprendizaje, muchas veces leyendo documentacion. Tambien me permite
+        explorar y conocer el mundo de los componentes de la "maquina de Von
+        Neumann". He trabajado manteniendo los componentes, cambiandolos cuando
+        es necesario o haciendoles reballing.
+      </h4>
+      <h3>(2023 - presente) Tecnico Operador DMX - Autonomo</h3>
+      <h4>
+        Ahondando en el mundo de la computacion y la electronica, me adentre en
+        el mundo de DMX. Este me permitio utilizar los conocimientos que habia
+        aprendido, tanto en informatica como en reparecion. En este trabajo debo
+        manejar y mantener los equipo DMX. Tambien, requiere un buen manejo del
+        estres. Entre otras tareas, tambien trato con clientes.
       </h4>
 
       <nav>
         <a href="src/cocktail.html">Cocktail</a>
-    </nav>
-
-  </aside>
-      <!-- <div id="root"></div>
+      </nav>
+    </aside>
+    <!-- <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script> -->
   </body>
 </html>
