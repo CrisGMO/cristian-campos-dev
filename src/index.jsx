@@ -53,46 +53,46 @@ console.log(trad);
 //     </StrictMode>
 // )
 
-rootPortafolio.render(
-    <StrictMode>
-        <section className="">
-            <div className="">
-                <div className="">
-                    <h2>{trad.presentacion.portfolio}</h2>
-                </div>
-                <div className="">
-                    <div className="">
-                        <div className="">
-                            <div className=""><i className=""></i></div>
-                            <div className="">
-                                <h3 className="">Web Design</h3>
-                                <p className="">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className="">
-                            <div className=""><i className=""></i></div>
-                            <div className="">
-                                <h3 className="">Interface Design</h3>
-                                <p className="">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className="">
-                            <div className=""><i className =""></i></div>
-                            <div className="">
-                                <h3 className="card-title">Photography and Print</h3>
-                                <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </StrictMode>
-)
+// rootPortafolio.render(
+//     <StrictMode>
+//         <section className="">
+//             <div className="">
+//                 <div className="">
+//                     <h2>{trad.presentacion.portfolio}</h2>
+//                 </div>
+//                 <div className="">
+//                     <div className="">
+//                         <div className="">
+//                             <div className=""><i className=""></i></div>
+//                             <div className="">
+//                                 <h3 className="">Web Design</h3>
+//                                 <p className="">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div className="">
+//                         <div className="">
+//                             <div className=""><i className=""></i></div>
+//                             <div className="">
+//                                 <h3 className="">Interface Design</h3>
+//                                 <p className="">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div className="">
+//                         <div className="">
+//                             <div className=""><i className =""></i></div>
+//                             <div className="">
+//                                 <h3 className="card-title">Photography and Print</h3>
+//                                 <p className="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+//     </StrictMode>
+// )
 
 function cambiarIdioma(nuevo) {
     localStorage.setItem('lang', nuevo)

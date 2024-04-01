@@ -77,13 +77,11 @@ body {
     /* border: 5px solid; */
     border-radius: 1vw;
     box-shadow: 2vw 2vw 5px rgba(0, 0, 0, 0.65);
-    grid-template-columns: 0.5fr 4fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
-                        "sign-in sign-in"
-                        ". name"
-                        ". hab"
-                        "sign-out sign-out";
+                        "sign name"
+                        "sign hab";
     top: 25%;
     left: 7%;
     /* height: 50%; */
@@ -92,18 +90,15 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-#sign-in {
+#sign {
     display: flex;
-    grid-area: sign-in;
-    font-size: 2vw;
-    justify-content: left;
-    margin: 0 0;
-}
-#sign-out {
-    display: flex;
-    grid-area: sign-out;
-    font-size: 2vw;
-    justify-content: left;
+    grid-area: sign;
+    font-size: 10vw;
+    font-family: "Nanum Gothic", sans-serif;
+    font-style: normal;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
     margin: 0 0;
 }
 #name {
@@ -115,10 +110,12 @@ body {
     margin: 0 0;
 }
 #hab {
-    display: flex;
     grid-area: hab;
     font-size: 4vw;
+    height: fit-content;
+    color: #000000;
     margin: 0 0;
+    box-sizing: border-box;
     align-items: center;
 }
 
@@ -163,6 +160,7 @@ body {
 .cuadroDatos {
     font-size: 20px;
     padding-left: 25px;
+    background-color: wheat;
 }
 
 .cuadroDatos h5 {
@@ -238,3 +236,54 @@ h5 {
     margin-left: 30px;
 
 }
+
+/* cards de portafolio: estilo y animacion */
+  .container {
+    height: 300px;
+    width: 100%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 20vw;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    align-content: center;
+    left: 0px;
+  }
+
+  .card:hover {
+    transform: translateY(-20px);
+    transform: translateX(20px);
+    transition: 0.4s ease-out;
+  }
+  
+.card:not(:hover) {
+    
+}
+
+  .card-titulo {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin: 2% auto;
+  }
+  
+  .card-datos {
+    position: flex;
+    left: calc(50% - 60px);
+    & img {
+        width: 90%;
+    }
+  }
