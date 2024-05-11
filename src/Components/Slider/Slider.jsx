@@ -4,6 +4,7 @@ import conocimientos from './conocimientos.json'
 
 function Slider () {
     const keys = Object.keys(conocimientos);
+    console.log(keys);
     return (
         keys.map ( (key) => {
             return (
