@@ -1,0 +1,21 @@
+{
+    "html" : "/src/assets/img/html-5.png",
+    "js" : "/src/assets/img/js.png",
+    "css-3" : "/src/assets/img/css-3.png",
+    "java" : "/src/assets/img/java.png",
+    "react" : "/src/assets/img/react.png",
+    "angular" : "/src/assets/img/angular.png",
+    "bootstrap" : "/src/assets/img/bootstrap.png",
+    "node" : "/src/assets/img/node.png",
+    "jquerry" : "/src/assets/img/jquerry.png",
+    "git" : "/src/assets/img/git.png",
+    "go" : "/src/assets/img/go.png",
+    "python" : "/src/assets/img/python.png",
+    "word" : "/src/assets/img/word.png",
+    "excel" : "/src/assets/img/excel.png",
+    "power-point" : "/src/assets/img/powerpoint.png",
+    "mySql" : "/src/assets/img/mysql.png",
+    "agil" : "/src/assets/img/agil.png",
+    "soporte" : "/src/assets/img/soporte.png",
+    "uml" : "/src/assets/img/uml.png"
+}

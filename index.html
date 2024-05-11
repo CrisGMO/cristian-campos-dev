@@ -16,77 +16,96 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="module" src="src/index.jsx"></script>
 
     <!-- <script src="src/langES.json"></script> -->
   </head>
-  <body id="root" style="display: block;">
-    <div class="barra" id="barra-navegacion">
-      <nav class="barra-navegacion">
-        <div class="barra-opciones">
-          <a class href="index.html">Home</a>
-          <a class href="#portafolio">Proyectos</a>
-          <a class href="cv.html">CV</a>
-          <a class href="hire-me.html">Contactame</a>
-        </div>
-      </nav>
-    </div>
+  <body id="root">
 
-    <main id="presentacion" class="main">
+    <nav class="barra barra-principal">
+      <a class href="https://cristiancampos.online">Home</a>
+          <a class href="#portafolio">Portafolio</a>
+          <a class href="cv.html">CV</a>
+    </nav>
+
+    <div class="pop linkedin">
+        <a class="icon" href="https://www.linkedin.com/in/cristian-campos1508/">
+          <img src="src/assets/img/linkedin.png" alt="">
+          <h4 class="text">LinkeIn</h4>
+        </a>
+    </div>
+    <div class="pop whatsapp">
+      <a class="icon" href="https://api.whatsapp.com/send?phone=541144457907&text=Quiero%20contratarte!!!">
+        <img src="src/assets/img/whatsapp.png" alt="">
+        <h4 class="text">Whatsapp</h4>
+      </a>
+  </div>
+
+    <main class="main">
       <div class="cuadro-presentacion">
         <h1 id="sign">&lt;/&gt;</h1>
         <h1 id="name">Cristian Campos</h1>
         <h1 id="hab">Desarrollador FullStack</h2>
-      </main>
-
-      <div id="portafolio" class="portafolio">
-        <section>
-          <div>
-            <h2>Portafolio</h2>
-
-            <div class="grid-card">
-
-              <div class="card">
-                <div class="content">
-                  
-                  <div class="back" style="background-image: url('src/bebidas-lab.vercel.app.png');" ></div>
-                  
-                  <div class="front" style="background-image: url('src/bebidas-lab.vercel.app.png');">
-
-                    <div class="descripcion">
-                      <h2 class="card-titulo">Cocktail Lab!</h2>
-
-                      <h3>
-                        Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
-                        API de <a href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
-                      </h3>
-
-                      <footer class="card-footer">
-                        <h4 class="badge">HTML</h4>
-                        <h4 class="badge">CSS</h4>
-                        <h4 class="badge">JavaScrypt</h4>
-                        <h4 class="badge">React JS</h4>
-                      </footer>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
+      </div>
+      <div class="foto-avatar imagen-glitch" style="background-image: url(src/imgCC.jpg);">
+        <!-- <img class="imagen-glitch" src="src/imgCC.jpg" alt="foto perfil"> -->
       </div>
 
-      <section class>
-        <!-- <div class="seccion-imagen">
-              <h1 class="titulo">Cristian Campos</h1>
-              <img class="img-perfil" src="src/imgCC.jpg">
-          </div> -->
+      <div class="slider">
+        <div id="conocimientos" class="slide-track"></div>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+            <h3>
+              <span>
+              Desarrollo Web. Desarrollo de Software. Arquitectura de Software.
+              Análisis de Requerimientos. Trabajo en Equipo. Liderazgo.
+              Creatividad.
+              Autodidacta. Resolución de Problemas. Diseño.
+            </span>
+          </h3>
+        </div>
+      </div>
+    </main>
+    
+    <section class="portafolio" id="portafolio">
+      <h2>Portafolio</h2>
+
+      <div class="grid-card">
+
+        <div class="card">
+          <div class="content">
+            <div class="back" style="background-image: url('src/bebidas-lab.vercel.app.png');" ></div>
+            <div class="front" style="background-image: url('src/bebidas-lab.vercel.app.png');">
+              <div class="descripcion">
+                <h2 class="card-titulo">Cocktail Lab!</h2>
+                <h3>
+                  Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
+                  API de <a href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
+                </h3>
+                <footer class="card-footer">
+                  <h4 class="badge">HTML</h4>
+                  <h4 class="badge">CSS</h4>
+                  <h4 class="badge">JavaScrypt</h4>
+                  <h4 class="badge">React JS</h4>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="cv">
+      <h2>CV</h2>
+
+      <div class="grid-cv">
+
         <div class="cuadroDatos">
           <h3 class="titulo-datos-personales">Datos Personales</h3>
-
+  
           <h4><img class="iconos" src="src/iconNombre.png" />Nombre</h4>
           <h5>Cristian Marcelo Campos</h5>
           <h4><img class="iconos" src="src/iconCasa.png" />Direccion</h4>
@@ -94,9 +113,9 @@
           <h5>Moreno, Buenos Aires</h5>
           <h4><img class="iconos" src="src/iconCalendario.png" />Nacimiento</h4>
           <h5>15 de Agosto - 1995</h5>
-
+  
           <h3 class="titulo-datos-personales">Contacto</h3>
-
+  
           <h4>
             <img class="iconos" src="src/iconLlamada.png" />Numero de Telefono
           </h4>
@@ -114,10 +133,8 @@
               href="https://www.linkedin.com/in/cristian-campos1508/">https://www.linkedin.com/in/cristian-campos1508/</a>
           </h5>
         </div>
-      </section>
 
-      <aside class="cuerpo">
-        <h2 class="presentacion">
+        <div class="presentacion">
           <span>
             Estudiante de Sistemas apasionado por la programación y los nuevos
             aprendizajes. Busco dar mis primeros pasos en grandes proyectos. La
@@ -135,57 +152,12 @@
             nuevas
             oportunidades y especializándome en áreas que me apasionan.
           </span>
-        </h2>
-        <nav>
-          <a href="#conocimientos">Conocimientos</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#estudios">Formacion y Estudios</a>
-          <a href="#experiencia">Experiencia</a>
-        </nav>
-        <br />
-        <h2 id="conocimientos">Conocimientos</h2>
-        <h3>
-          <span>
-            JAVA. HTML5. JS. Go. Pyhton. Angular. Node JS. CSS. Bootstrap.
-            Microsoft Office. React JS. JQuerry.MySQL. UML. Agile. Git. Soporte
-            Técnico.
-          </span>
-        </h3>
-        <h2 id="habilidades">Habilidades</h2>
-        <h3>
-          <span>
-            Desarrollo Web. Desarrollo de Software. Arquitectura de Software.
-            Análisis de Requerimientos. Trabajo en Equipo. Liderazgo.
-            Creatividad.
-            Autodidacta. Resolución de Problemas. Diseño.
-          </span>
-        </h3>
-        <br />
-        <h2 id="estudios">Formacion y Estudios</h2>
-        <h3>
-          Estudios Universitarios
-          <h4>
-            (2016 - presente) Licenciatura en Sistemas. Universidad Nacional de
-            General Sarmiento
-          </h4>
-          <h5>Materias Aprobadas : 18</h5>
-          <h5>Materias Restantes: 19</h5>
-          <br />
-          <h4>
-            (2019 - presente) Tecnicatura Superior en Informatica. Universidad
-            Nacional de General Sarmiento
-          </h4>
-          <h5>Materias Aprobadas : 19</h5>
-          <h5>Materias Restantes: 2</h5>
-          <br />
-        </h3>
-        <h3>
-          Cursos Complementarios
-          <h4>(2006) Investigador Avanzado. ECTA</h4>
-          <h4>(2007) Operador PC Basico. ECTA</h4>
-        </h3>
-        <br />
-        <h2 id="experiencia">Experiencia Laboral y de Formacion</h2>
+        </div>
+
+      </div>
+
+      <div class="">
+        <h2>Experiencia Laboral y de Formacion</h2>
         <h3>(2016 - 2016) Vendedor - Local de Ropa Brescia.</h3>
         <h4>
           Esta etapa no ha sido transcendental en mi formacion como
@@ -237,12 +209,35 @@
           del
           estres. Entre otras tareas, tambien trato con clientes.
         </h4>
+      </div>
 
-        <nav>
-          <a href="https://bebidas-lab.vercel.app">Cocktail</a>
-        </nav>
-      </aside>
-      <!-- <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script> -->
+      <div id="estudios">
+        <h2>Formacion y Estudios</h2>
+        <h3>
+          Estudios Universitarios
+          <h4>
+            (2016 - presente) Licenciatura en Sistemas. Universidad Nacional de
+            General Sarmiento
+          </h4>
+          <h5>Materias Aprobadas : 18</h5>
+          <h5>Materias Restantes: 19</h5>
+          <br />
+          <h4>
+            (2019 - presente) Tecnicatura Superior en Informatica. Universidad
+            Nacional de General Sarmiento
+          </h4>
+          <h5>Materias Aprobadas : 19</h5>
+          <h5>Materias Restantes: 2</h5>
+          <br />
+        </h3>
+        <h3>
+          Cursos Complementarios
+          <h4>(2006) Investigador Avanzado. ECTA</h4>
+          <h4>(2007) Operador PC Basico. ECTA</h4>
+        </h3>
+      </div>
+
+    </section>
+
     </body>
   </html>
