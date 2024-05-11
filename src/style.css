@@ -600,3 +600,7 @@ h5 {
     width: 60%;
     padding: 4px;
     }
+
+.no-class {
+  text-decoration: none;
+}
