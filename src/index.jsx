@@ -1,18 +1,53 @@
-import React, { StrictMode, useState } from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
-import lang from './lang.json';
+// import lang from './lang.json';
 import Slider from './Components/Slider/Slider'
 import { Analytics } from "@vercel/analytics/react"
+import Card from "./Components/Card/Card";
 
-var langActual = '';
-langActual = localStorage.getItem('clave') != null ? localStorage.getItem('clave') : localStorage.setItem('lang', 'es');
-const trad = langActual == 'en'? lang.en : lang.es ;
+// var langActual = '';
+// langActual = localStorage.getItem('clave') != null ? localStorage.getItem('clave') : localStorage.setItem('lang', 'es');
+// const trad = langActual == 'en'? lang.en : lang.es ;
 
 const rootConocimientos = ReactDOM.createRoot(document.getElementById('conocimientos'));
 rootConocimientos.render(
     <StrictMode>
         <Slider></Slider>
         <Analytics></Analytics>
+    </StrictMode>
+)
+
+const datosCard1 = {
+    titulo:'Bebidas Lab!',
+    urlPagina:'https://bebidas-lab.vercel.app/',
+    urlPortada:'https://i.imgur.com/g4ulmh5.png',
+    descripcion:`Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
+    API de TheCocktailDB`,
+    badges:['HTML','JS','React JS','CSS','API consume']
+}
+
+const datosCard2 = {
+    titulo: 'fotoAPI',
+    urlPagina: 'https://foto-api.vercel.app/api/fotos',
+    urlPortada: 'https://i.imgur.com/2gGN89r.png',
+    descripcion: 'Desarrollandose como proyecto personal y laboral, se construyo esta API bajo los fundamentos MVC. Esta misma da soporte a una aplicacion que permite proyectar imagenes que las personas suben a traves de un qr durante un evento',
+    badges: ['HTML', 'JS', 'Node JS', 'Express', 'PostgresSQL', 'MVC']
+}
+
+const datosCard3 = {
+    titulo: 'Natch Arquictura',
+    urlPagina: 'https://arquitecturanatch.online',
+    urlPortada: 'https://i.imgur.com/tDjpvwV.png',
+    descripcion: 'Landing SPA para los servicios de un estudio de arquitectura. En progreso.',
+    badges: ['HTML','JS','React JS','CSS']
+}
+
+const rootCards = ReactDOM.createRoot(document.getElementById('grid-card'));
+rootCards.render(
+    <StrictMode>
+        <Card {...datosCard1}></Card>
+        <Card {...datosCard2}></Card>
+        <Card {...datosCard3}></Card>
     </StrictMode>
 )
 
