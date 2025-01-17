@@ -1,9 +1,14 @@
 import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
-// import lang from './lang.json';
-import Slider from './Components/Slider/Slider'
+// import Slider from './Components/Slider/Slider'
 import { Analytics } from "@vercel/analytics/react"
 import Card from "./Components/Card/Card";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import conocimientos from "./Components/Slider/conocimientos.json"
+import Slide from "./Components/Slide/Slide";
+import ContinuousCarousel from "./Components/Slider/ContinuousCarousel";
 
 // var langActual = '';
 // langActual = localStorage.getItem('clave') != null ? localStorage.getItem('clave') : localStorage.setItem('lang', 'es');
@@ -12,7 +17,7 @@ import Card from "./Components/Card/Card";
 const rootConocimientos = ReactDOM.createRoot(document.getElementById('conocimientos'));
 rootConocimientos.render(
     <StrictMode>
-        <Slider></Slider>
+        <ContinuousCarousel tecnologias={conocimientos}/>
         <Analytics></Analytics>
     </StrictMode>
 )
@@ -59,4 +64,4 @@ function cambiarIdioma(nuevo) {
 function duplicarComponente() {
     const nuevoComponente = React.cloneElement(copy);
     document.getElementById('conocimientos').appendChild(nuevoComponente);
-  };
+  }

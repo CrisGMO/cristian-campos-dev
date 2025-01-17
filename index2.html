@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Cristian Campos</title>
+
+    <!-- incluyendo bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="src/index.jsx"></script>
+
+    <!-- <script src="src/langES.json"></script> -->
+  </head>
+  <body id="root">
+
+    <nav class="barra barra-principal">
+      <a class href="https://cristiancampos.online">Home</a>
+          <a class href="#portafolio">Portafolio</a>
+          <a class href="#cv">CV</a>
+    </nav>
+
+    <div class="pop linkedin">
+        <a class="icon" href="https://www.linkedin.com/in/cristian-campos1508/">
+          <img src="src/linkedin.png" alt="">
+          <h4 class="text">LinkeIn</h4>
+        </a>
+    </div>
+    <div class="pop whatsapp">
+      <a class="icon" href="https://api.whatsapp.com/send?phone=541144457907&text=Quiero%20contratarte!!!">
+        <img src="src/whatsapp.png" alt="">
+        <h4 class="text">Whatsapp</h4>
+      </a>
+  </div>
+
+    <main class="main">
+      <div class="cuadro-presentacion">
+        <h1 id="sign">&lt;/&gt;</h1>
+        <h1 id="name">Cristian Campos</h1>
+        <h1 id="hab">Desarrollador FullStack</h2>
+      </div>
+
+      <div id="conocimientos" class="conocimientos"></div>
+      <!-- <div class="slider">
+        <div class="slide-track">
+            <h3>
+              <span class="badge badge-cualidades">Desarrollo Web </span>
+              <span class="badge badge-cualidades">Desarrollo de Software.</span>
+              <span class="badge badge-cualidades">Arquitectura de Software</span>
+              <span class="badge badge-cualidades">Análisis de Requerimientos</span>
+              <span class="badge badge-cualidades">Trabajo en Equipo</span>
+              <span class="badge badge-cualidades">Liderazgo</span>
+              <span class="badge badge-cualidades">Creatividad</span>
+              <span class="badge badge-cualidades">Autodidacta</span>
+              <span class="badge badge-cualidades">Resolución de Problemas</span>
+              <span class="badge badge-cualidades">Diseño</span>
+            </h3>
+        </div>
+      </div> -->
+    </main>
+    
+    <section class="portafolio" id="portafolio">
+      <h2>Portafolio</h2>
+
+      <div id="grid-card" class="grid-card">
+
+        
+          <div class="card">
+            <a href="https://bebidas-lab.vercel.app/" class="no-class">
+              <div class="content">
+                <div class="back" style="background-image: url('src/bebidas-lab.vercel.app.png');" ></div>
+                <div class="front" style="background-image: url('src/bebidas-lab.vercel.app.png');">
+                  <div class="descripcion">
+                    <h2 class="card-titulo">Cocktail Lab!</h2>
+                    <h3>
+                      Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
+                      API de <a href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
+                    </h3>
+                    <footer class="card-footer">
+                      <h4 class="badge badge-card">HTML</h4>
+                      <h4 class="badge badge-card">CSS</h4>
+                      <h4 class="badge badge-card">JavaScrypt</h4>
+                      <h4 class="badge badge-card">React JS</h4>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+      </div>
+
+    </section>
+
+    <section class="cv" id="cv">
+      <h2>CV</h2>
+
+      <div class="grid-cv">
+
+        <div class="cuadroDatos">
+          <h3 class="titulo-datos-personales">Datos Personales</h3>
+  
+          <h4><img class="iconos" src="src/iconNombre.png" />Nombre</h4>
+          <h5>Cristian Marcelo Campos</h5>
+          <h4><img class="iconos" src="src/iconCasa.png" />Direccion</h4>
+          <h5>Casacuberta 5472</h5>
+          <h5>Moreno, Buenos Aires</h5>
+          <h4><img class="iconos" src="src/iconCalendario.png" />Nacimiento</h4>
+          <h5>15 de Agosto - 1995</h5>
+  
+          <h3 class="titulo-datos-personales">Contacto</h3>
+  
+          <h4>
+            <img class="iconos" src="src/iconLlamada.png" />Numero de Telefono
+          </h4>
+          <h5>+54 11 44457907</h5>
+          <h4>
+            <img class="iconos" src="src/iconCorreo.png" />Correo Electronico
+          </h4>
+          <h5>
+            <a href="mailto:cristiancampos1508@gmail.com"
+              target="_blank">cristiancampos1508@gmail.com</a>
+          </h5>
+          <h4><img class="iconos" src="src/iconLinkedin.png" />Linkedin</h4>
+          <h5>
+            <a
+              href="https://www.linkedin.com/in/cristian-campos1508/">https://www.linkedin.com/in/cristian-campos1508/</a>
+          </h5>
+        </div>
+
+        <div class="presentacion">
+          <span>
+            Estudiante de Sistemas apasionado por la programación y los nuevos
+            aprendizajes. Busco dar mis primeros pasos en grandes proyectos. La
+            experiencia de la vida me ha ayudado a desarrollar una mente
+            práctica
+            e innovadora, buscando las mejores soluciones a los desafíos, por lo
+            que me considero una persona muy resolutiva. Tengo conocimientos y
+            experiencia práctica en desarrollo web, tanto en front-end como en
+            back-end, utilizando tecnologías como JavaScrypt, HTML, CSS, Angular
+            JS, Node JS, entre otros. También en el desarrollo de aplicaciones
+            con
+            tecnologías como JAVA, Python, GO, etc. He participado en cada etapa
+            del ciclo de vida de desarrollo de software. Busco seguir creciendo
+            profesionalmente en la industria de la programación, explorando
+            nuevas
+            oportunidades y especializándome en áreas que me apasionan.
+          </span>
+        </div>
+
+      </div>
+
+      <div class="grid-lineal">
+        <div class="lineatemp">
+          <h2>Experiencia Laboral y de Formacion</h2>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2023 - presente</div>
+            <div>
+              <p>Tecnico Operador DMX - Autonomo</p>
+              <p>Ahondando en el mundo de la computacion y la electronica, me adentre
+                en el mundo de DMX. Este me permitio utilizar los conocimientos que habia
+                aprendido, tanto en informatica como en reparecion. Entre mis responsabilidades
+                entan manejar y mantener los equipo DMX. Tambien, requiere un buen manejo del
+                estres. Entre otras tareas, tambien trato con clientes.
+              </p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2023 - presente</div>
+            <div>
+              <p>Tecnico de PC / Celulares / Electronica - Autonomo</p>
+              <p>
+                El conocimiento tanto en software como en hardware me permitio adentrarme en el mundo del mantenimiento y
+                actualizacion de
+                computadoras, tanto de escritorio como portatiles, de celulares y de
+                otros aparatos electronicos. Esto requiere que este en continuo
+                aprendizaje, muchas veces leyendo documentacion. Tambien me permite
+                explorar y conocer el mundo de los componentes de la "maquina de Von
+                Neumann". He trabajado manteniendo los componentes, cambiandolos
+                cuando es necesario o haciendoles reballing.
+              </p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2017 - 2021</div>
+            <div>
+              <p>Dibujante CAD - Autonomo</p>
+              <p>
+                Gracias a mi habilidad en la informatica y a mi paso por la carrera de
+                Ingenieria, pude aprender a realizar planos municipales con programas
+                de dibujo asistido por computadora. Este trabajo requeria una buena
+                comunicacion con clientes y en ocaciones con compañeros de trabajo.
+                Cada proyecto requeria identificar requisitos de los mismos, a documentar
+                los mismos, a administrar los tiempos y los recursos del equipo.
+              </p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2017-2017</div>
+            <div>
+              <p>Seguridad - Dash/Grid</p>
+              <p>Este trabajo consistia en cuidar a las personas, a los empleados y el
+                stock del local. Tambien recurrentemente las personas pedian ayudada o
+                orientacion, por lo que en este trabajo tambien tuve que aprender a
+                tratar con distintas personas, a comunicarme y a manejar situaciones.
+              <p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2016 - 2016</div>
+            <div>
+              <p>Vendedor - Local de Ropa Brescia.</p>
+              <p>
+                Esta etapa no ha sido transcendental en mi formacion como
+                desarrollador,
+                sin embargo, he aprendido en este trabajo a comunicarme con las
+                personas, en el rol de vendedor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lineatemp">
+          <h2>Formacion y Estudios</h2>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2019 - presente</div>
+            <div>
+              <p>Tecnicatura Superior en Informatica</p>
+              <p>Universidad Nacional de General Sarmiento</p>
+                <h5>Materias Aprobadas : 19</h5>
+                <h5>Materias Restantes: 2</h5>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2016 - presente</div>
+            <div>
+              <p>Licenciatura en Sistemas</p>
+              <p>Universidad Nacional de General Sarmiento</p>
+                <h5>Materias Aprobadas : 18</h5>
+                <h5>Materias Restantes: 19</h5>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2007</div>
+            <div>
+              <p>Operador PC Basico</p>
+              <p>ECTA</p>
+            </div>
+          </div>
+          <div class="fila">
+            <div class="disco">
+              <div></div>
+            </div>
+            <div>2006</div>
+            <div>
+              <p>Investigador Avanzado</p>
+              <p>ECTA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+    </section>
+
+    </body>
+  </html>

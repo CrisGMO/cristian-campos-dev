@@ -1,308 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Cristian Campos</title>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>JohnDoe Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="/assets/css/johndoe.css">
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
 
-    <!-- incluyendo bootstrap -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="module" src="src/index.jsx"></script>
+        <div class="container"> 
 
-    <!-- <script src="src/langES.json"></script> -->
-  </head>
-  <body id="root">
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hola, soy</h4>
+                <h1 class="header-title">Cristian Campos</h1>
+                <h6 class="header-mono" >DEVELOPER</h6>
+                <a href="http://">
+                    <button class="btn btn-primary btn-rounded"><img width="25" height="25" src="https://img.icons8.com/ios-filled/100/contract-job.png" alt="contract-job"/>Descargar CV</button>
+                </a>
+            </div>
 
-    <nav class="barra barra-principal">
-      <a class href="https://cristiancampos.online">Home</a>
-          <a class href="#portafolio">Portafolio</a>
-          <a class href="#cv">CV</a>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portafolio</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="https://i.imgur.com/x0COxgo.png" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Cristian Campos</h5>
+                        <div class="brand-subtitle">Developer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resumen</a>
+                    </li>
+                    <!-- Proximamente -->
+                    <!-- <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="pop linkedin">
-        <a class="icon" href="https://www.linkedin.com/in/cristian-campos1508/">
-          <img src="src/linkedin.png" alt="">
-          <h4 class="text">LinkeIn</h4>
-        </a>
-    </div>
-    <div class="pop whatsapp">
-      <a class="icon" href="https://api.whatsapp.com/send?phone=541144457907&text=Quiero%20contratarte!!!">
-        <img src="src/whatsapp.png" alt="">
-        <h4 class="text">Whatsapp</h4>
-      </a>
-  </div>
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Mi</span> Portafolio</h1>
+            <div class="portfolio">
+                <!-- <div class="filters">
+                    <a href="#" data-filter=".new" class="active">
+                        New
+                    </a>
+                    <a href="#" data-filter=".advertising">
+                        Advertising
+                    </a>
+                    <a href="#" data-filter=".branding">
+                        Branding
+                    </a>
+                    <a href="#" data-filter=".web">
+                        Web
+                    </a>
+                </div> -->
+                <div class="portfolio-container">
 
-    <main class="main">
-      <div class="cuadro-presentacion">
-        <h1 id="sign">&lt;/&gt;</h1>
-        <h1 id="name">Cristian Campos</h1>
-        <h1 id="hab">Desarrollador FullStack</h2>
-      </div>
-      <div class="foto-avatar imagen-glitch" style="background-image: url(src/imgCC.jpg);">
-        <!-- <img class="imagen-glitch" src="src/imgCC.jpg" alt="foto perfil"> -->
-      </div>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://bebidas-lab.vercel.app/">
+                                <img src="https://i.imgur.com/g4ulmh5.png" class="img-fluid" alt="">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">Bebidas Lab!</h6>
+                                        <p class="subtitle">Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
+                                            API de TheCocktailDB</p>
+                                    </div>
+                                </div>
+                            </a>   
+                        </div>             
+                    </div>
 
-      <div class="slider">
-        <div id="conocimientos" class="slide-track"></div>
-      </div>
-      <div class="slider">
-        <div class="slide-track">
-            <h3>
-              <span class="badge badge-cualidades">Desarrollo Web </span>
-              <span class="badge badge-cualidades">Desarrollo de Software.</span>
-              <span class="badge badge-cualidades">Arquitectura de Software</span>
-              <span class="badge badge-cualidades">Análisis de Requerimientos</span>
-              <span class="badge badge-cualidades">Trabajo en Equipo</span>
-              <span class="badge badge-cualidades">Liderazgo</span>
-              <span class="badge badge-cualidades">Creatividad</span>
-              <span class="badge badge-cualidades">Autodidacta</span>
-              <span class="badge badge-cualidades">Resolución de Problemas</span>
-              <span class="badge badge-cualidades">Diseño</span>
-            </h3>
-        </div>
-      </div>
-    </main>
-    
-    <section class="portafolio" id="portafolio">
-      <h2>Portafolio</h2>
+                    <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://arquitecturanatch.online">
+                                <img src="https://i.imgur.com/tDjpvwV.png" class="img-fluid" alt="">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">Natch Arquictura</h6>
+                                        <p class="subtitle">Landing SPA para los servicios de un estudio de arquitectura. En progreso.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                         
+                    </div>
 
-      <div id="grid-card" class="grid-card">
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://foto-api.vercel.app/api/fotos">
+                                <img src="https://i.imgur.com/2gGN89r.png" class="img-fluid" alt="">                         
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">fotoAPI</h6>
+                                        <p class="subtitle">Desarrollandose como proyecto personal y laboral, se construyo esta API bajo los fundamentos MVC. Esta misma da soporte a una aplicacion que permite proyectar imagenes que las personas suben a traves de un qr durante un evento</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>              
+                    </div>
 
-        
-          <div class="card">
-            <a href="https://bebidas-lab.vercel.app/" class="no-class">
-              <div class="content">
-                <div class="back" style="background-image: url('src/bebidas-lab.vercel.app.png');" ></div>
-                <div class="front" style="background-image: url('src/bebidas-lab.vercel.app.png');">
-                  <div class="descripcion">
-                    <h2 class="card-titulo">Cocktail Lab!</h2>
-                    <h3>
-                      Un recetario de bebidas de todo tipo, implementado en SPA, apoyandose en la
-                      API de <a href="https://www.thecocktaildb.com/api.php">TheCocktailDB</a>
-                    </h3>
-                    <footer class="card-footer">
-                      <h4 class="badge badge-card">HTML</h4>
-                      <h4 class="badge badge-card">CSS</h4>
-                      <h4 class="badge badge-card">JavaScrypt</h4>
-                      <h4 class="badge badge-card">React JS</h4>
-                    </footer>
-                  </div>
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://foto-proyeccion-git-main-crisgmos-projects.vercel.app/src/subir.html">
+                                <img src="https://i.imgur.com/UGOOLEY.png" class="img-fluid" alt="">                         
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">Foto Proyección: Usuario Invitado</h6>
+                                        <p class="subtitle">Una página de uso público que permite subir las fotos a una base de datos a través de la API mencionada anteriormente.</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>              
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://foto-proyeccion-git-main-crisgmos-projects.vercel.app/src/evento.html">
+                                <img src="https://i.imgur.com/MOqn40f.png" class="img-fluid" alt="">                         
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">Foto Proyección: Pantalla de Proyección</h6>
+                                        <p class="subtitle">Una página que permite visualizar las fotos y los mensajes que los usuarios suban en la página anteriomente mencionada.</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>              
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <a class="img-popup" href="https://i.imgur.com/HDdBbhl.png">
+                                <img src="https://i.imgur.com/HDdBbhl.png" class="img-fluid" alt="">                         
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">Foto Proyección: Pantalla de Administración</h6>
+                                        <p class="subtitle">Una página para administradores que permite moderar el contenido subido.</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>              
+                    </div>
+
+                </div> 
+            </div>  
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Quien soy?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Soy...</h5>
+                <p class="mt-20">
+                    Soy estudiante de Sistemas con una gran pasión por la tecnología, la programación y el aprendizaje constante. Aspiro a contribuir a proyectos desafiantes donde pueda aplicar y expandir mis conocimientos.
+
+                    Cuento con experiencia práctica en desarrollo web, tanto en front-end como en back-end, utilizando tecnologías como JavaScript, HTML, CSS, AngularJS y Node.js, entre otras. También he trabajado en el desarrollo de aplicaciones utilizando lenguajes como Java, Python y Go. He participado en todas las etapas del ciclo de vida del desarrollo de software, desde la planificación hasta la implementación.
+
+                    Me considero una persona resolutiva, con una mentalidad práctica e innovadora, siempre en busca de soluciones eficientes a los desafíos. Estoy comprometido con seguir creciendo profesionalmente en la industria de la programación, explorando nuevas tecnologías y especializándome en áreas que me apasionan.
+
+                    Estoy listo para aportar mis habilidades y entusiasmo a proyectos que marquen una diferencia.
+
+                </p>
+                <!-- <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button> -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Información de Personal</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <!-- <li><span>Birthdate</span> : 15/08/1995</li> -->
+                    <li><span>Email</span> : <a href="mailto:cristiancampos1508@gmail.com">cristiancampos1508@gmail.com</a></li>
+                    <li><span>Telefono</span> : <a href="https://api.whatsapp.com/send?phone=541144457907&text=">+ (54) 11 44457907</a></li>
+                    <li><span>LinkedIn</span> : <a href="https://www.linkedin.com/in/cristian-campos1508/">Cristian Campos</a></li>
+                    <li><span>Dirección</span> :  Moreno, Buenos Aires, Argentina</li>
+                </ul>
+                <!-- <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>   -->
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Mis conocimientos y habilidades</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img width="50" height="50" src="https://img.icons8.com/ios-filled/100/program.png" alt="program"/></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Lenguajes y Conocimientos</h6>
+                        <p class="subtitle">
+                            HTML , JS , CSS , Java , React JS , Angular , Bootstrap , Node JS , JQuerry , 
+                            GIT , Go , mySQL
+                        </p>
+                        <hr>
+                    </div>
                 </div>
-              </div>
-            </a>
-            
-          </div>
-      </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img width="50" height="50" src="https://img.icons8.com/ios-filled/100/persuasion-skills.png" alt="persuasion-skills"/> </div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Habilidades Blandas</h6>
+                        <p class="subtitle">
+                            Trabajo en Equipo , Liderazgo , Creatividad , Resolucion de Problemas, Comunicación ,
+                            Autoaprendizaje , Razonamiento Lógico , Capacidad de Analisis , Capacidad de Investigación
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img width="50" height="50" src="https://img.icons8.com/ios-filled/100/learning.png" alt="learning"/></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Otros conocimientos</h6>
+                        <p class="subtitle">
+                            Word , Excel , PowerPoint , PowerBi , AutoCAD , Sketchup , Canva , 
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Mi</span> Resumen</h2>
+            <div class="row">
+
+                <!-- Experiencias -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Experiencias</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2023 - Presente</h6>
+                            <P>Tecnico Operador DMX - Autonomo</P>
+                            <P class="subtitle">
+                                Ahondando en el mundo de la computacion y la electronica, me adentre
+                                en el mundo de DMX. Este me permitio utilizar los conocimientos que habia
+                                aprendido, tanto en informatica como en reparecion. Entre mis responsabilidades
+                                entan manejar y mantener los equipo DMX. Tambien, requiere un buen manejo del
+                                estres. Entre otras tareas, tambien trato con clientes.
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2023 - Presente</h6>
+                            <P>Tecnico de PC / Celulares / Electronica - Autonomo</P>
+                            <P class="subtitle">
+                                El conocimiento tanto en software como en hardware me permitio adentrarme en el mundo del mantenimiento y
+                                actualizacion de
+                                computadoras, tanto de escritorio como portatiles, de celulares y de
+                                otros aparatos electronicos. Esto requiere que este en continuo
+                                aprendizaje, muchas veces leyendo documentacion. Tambien me permite
+                                explorar y conocer el mundo de los componentes de la "maquina de Von
+                                Neumann". He trabajado manteniendo los componentes, cambiandolos
+                                cuando es necesario o haciendoles reballing.
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2017 - 2021</h6>
+                            <P>Dibujante CAD - Autonomo</P>
+                            <P class="subtitle">
+                                Gracias a mi habilidad en la informatica y a mi paso por la carrera de
+                                Ingenieria, pude aprender a realizar planos municipales con programas
+                                de dibujo asistido por computadora. Este trabajo requeria una buena
+                                comunicacion con clientes y en ocaciones con compañeros de trabajo.
+                                Cada proyecto requeria identificar requisitos de los mismos, a documentar
+                                los mismos, a administrar los tiempos y los recursos del equipo.
+                            </P>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Educacion -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Formación y Estudios</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">2019 - Presente</h6>
+                            <P>Tecnicatura Superior en Informatica</P>
+                            <P>Universidad Nacional de General Sarmiento</P>
+                            <P class="subtitle">
+                                Materias Aprobadas : 19 <br> Materias Restantes: 2
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2016 - Presente</h6>
+                            <P>Licenciatura en Sistemas</P>
+                            <p>Universidad Nacional de General Sarmiento</p>
+                            <P class="subtitle">
+                                Materias Aprobadas : 18 <br> Materias Restantes: 19
+                            </P>
+                            <hr>
+                            <h6 class="title text-danger">2007</h6>
+                            <P>Operador PC Básico</P>
+                            <p>ECTA</p>
+                            <hr>
+                            <h6 class="title text-danger">2006</h6>
+                            <P>Investigador Avanzado</P>
+                            <p>ECTA</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Habilidades -->
+                <div class="col-lg-4">
+
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>Español</h6>
+                            <p class="subtitle">Nativo</p>
+                           <h6>Inglés</h6>
+                           <p class="subtitle">Lectura: Avanzado | Habla: Intermedio   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="cv" id="cv">
-      <h2>CV</h2>
 
-      <div class="grid-cv">
+    <!-- <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5">Últimas <span class="text-danger">Novedades</span></h2>
+            <div class="row">
 
-        <div class="cuadroDatos">
-          <h3 class="titulo-datos-personales">Datos Personales</h3>
-  
-          <h4><img class="iconos" src="src/iconNombre.png" />Nombre</h4>
-          <h5>Cristian Marcelo Campos</h5>
-          <h4><img class="iconos" src="src/iconCasa.png" />Direccion</h4>
-          <h5>Casacuberta 5472</h5>
-          <h5>Moreno, Buenos Aires</h5>
-          <h4><img class="iconos" src="src/iconCalendario.png" />Nacimiento</h4>
-          <h5>15 de Agosto - 1995</h5>
-  
-          <h3 class="titulo-datos-personales">Contacto</h3>
-  
-          <h4>
-            <img class="iconos" src="src/iconLlamada.png" />Numero de Telefono
-          </h4>
-          <h5>+54 11 44457907</h5>
-          <h4>
-            <img class="iconos" src="src/iconCorreo.png" />Correo Electronico
-          </h4>
-          <h5>
-            <a href="mailto:cristiancampos1508@gmail.com"
-              target="_blank">cristiancampos1508@gmail.com</a>
-          </h5>
-          <h4><img class="iconos" src="src/iconLinkedin.png" />Linkedin</h4>
-          <h5>
-            <a
-              href="https://www.linkedin.com/in/cristian-campos1508/">https://www.linkedin.com/in/cristian-campos1508/</a>
-          </h5>
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Consectetur adipisicing elit</h6>
+
+                        <p class="post-details">
+                            <a href="#">By: Admin</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                            <a href="#"><i class="ti-comment"></i> 123</a>
+                        </p>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section> -->
 
-        <div class="presentacion">
-          <span>
-            Estudiante de Sistemas apasionado por la programación y los nuevos
-            aprendizajes. Busco dar mis primeros pasos en grandes proyectos. La
-            experiencia de la vida me ha ayudado a desarrollar una mente
-            práctica
-            e innovadora, buscando las mejores soluciones a los desafíos, por lo
-            que me considero una persona muy resolutiva. Tengo conocimientos y
-            experiencia práctica en desarrollo web, tanto en front-end como en
-            back-end, utilizando tecnologías como JavaScrypt, HTML, CSS, Angular
-            JS, Node JS, entre otros. También en el desarrollo de aplicaciones
-            con
-            tecnologías como JAVA, Python, GO, etc. He participado en cada etapa
-            del ciclo de vida de desarrollo de software. Busco seguir creciendo
-            profesionalmente en la industria de la programación, explorando
-            nuevas
-            oportunidades y especializándome en áreas que me apasionan.
-          </span>
+    
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+            </p>
         </div>
+    </footer>
 
-      </div>
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-      <div class="grid-lineal">
-        <div class="lineatemp">
-          <h2>Experiencia Laboral y de Formacion</h2>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2023 - presente</div>
-            <div>
-              <p>Tecnico Operador DMX - Autonomo</p>
-              <p>Ahondando en el mundo de la computacion y la electronica, me adentre
-                en el mundo de DMX. Este me permitio utilizar los conocimientos que habia
-                aprendido, tanto en informatica como en reparecion. Entre mis responsabilidades
-                entan manejar y mantener los equipo DMX. Tambien, requiere un buen manejo del
-                estres. Entre otras tareas, tambien trato con clientes.
-              </p>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2023 - presente</div>
-            <div>
-              <p>Tecnico de PC / Celulares / Electronica - Autonomo</p>
-              <p>
-                El conocimiento tanto en software como en hardware me permitio adentrarme en el mundo del mantenimiento y
-                actualizacion de
-                computadoras, tanto de escritorio como portatiles, de celulares y de
-                otros aparatos electronicos. Esto requiere que este en continuo
-                aprendizaje, muchas veces leyendo documentacion. Tambien me permite
-                explorar y conocer el mundo de los componentes de la "maquina de Von
-                Neumann". He trabajado manteniendo los componentes, cambiandolos
-                cuando es necesario o haciendoles reballing.
-              </p>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2017 - 2021</div>
-            <div>
-              <p>Dibujante CAD - Autonomo</p>
-              <p>
-                Gracias a mi habilidad en la informatica y a mi paso por la carrera de
-                Ingenieria, pude aprender a realizar planos municipales con programas
-                de dibujo asistido por computadora. Este trabajo requeria una buena
-                comunicacion con clientes y en ocaciones con compañeros de trabajo.
-                Cada proyecto requeria identificar requisitos de los mismos, a documentar
-                los mismos, a administrar los tiempos y los recursos del equipo.
-              </p>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2017-2017</div>
-            <div>
-              <p>Seguridad - Dash/Grid</p>
-              <p>Este trabajo consistia en cuidar a las personas, a los empleados y el
-                stock del local. Tambien recurrentemente las personas pedian ayudada o
-                orientacion, por lo que en este trabajo tambien tuve que aprender a
-                tratar con distintas personas, a comunicarme y a manejar situaciones.
-              <p>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2016 - 2016</div>
-            <div>
-              <p>Vendedor - Local de Ropa Brescia.</p>
-              <p>
-                Esta etapa no ha sido transcendental en mi formacion como
-                desarrollador,
-                sin embargo, he aprendido en este trabajo a comunicarme con las
-                personas, en el rol de vendedor.
-              </p>
-            </div>
-          </div>
-        </div>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-        <div class="lineatemp">
-          <h2>Formacion y Estudios</h2>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2019 - presente</div>
-            <div>
-              <p>Tecnicatura Superior en Informatica</p>
-              <p>Universidad Nacional de General Sarmiento</p>
-                <h5>Materias Aprobadas : 19</h5>
-                <h5>Materias Restantes: 2</h5>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2016 - presente</div>
-            <div>
-              <p>Licenciatura en Sistemas</p>
-              <p>Universidad Nacional de General Sarmiento</p>
-                <h5>Materias Aprobadas : 18</h5>
-                <h5>Materias Restantes: 19</h5>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2007</div>
-            <div>
-              <p>Operador PC Basico</p>
-              <p>ECTA</p>
-            </div>
-          </div>
-          <div class="fila">
-            <div class="disco">
-              <div></div>
-            </div>
-            <div>2006</div>
-            <div>
-              <p>Investigador Avanzado</p>
-              <p>ECTA</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
-      
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
 
-      
-
-    </section>
-
-    </body>
-  </html>
+</body>
+</html>
